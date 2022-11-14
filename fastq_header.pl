@@ -1,7 +1,5 @@
 #!/usr/bin/perl
 
-use warnings;
-
 ## ---------------------------
 ##
 ## fastq_header.pl
@@ -11,6 +9,8 @@ use warnings;
 ## Author: Juan Santos, SLU, 2020 December
 ## Usage: perl fastq_header.pl sample_r1.fastq sample_r2.fastq 
 ## ---------------------------
+
+use warnings;
 
 my $input_1 = shift @ARGV;
 my $input_2 = shift @ARGV;
