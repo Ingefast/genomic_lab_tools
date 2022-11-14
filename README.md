@@ -35,5 +35,3 @@ Looking like this in the first three fastq identifiers (header):
 @A00627:342:HHL5LDSX3:3:1101:1597:1031/2
 ```
 
-# CONTACT
-juan.santos at slu.se
