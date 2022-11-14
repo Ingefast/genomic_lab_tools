@@ -34,4 +34,20 @@ Looking like this in the first three fastq identifiers (header):
 @A00627:342:HHL5LDSX3:3:1101:23032:1016/2
 @A00627:342:HHL5LDSX3:3:1101:1597:1031/2
 ```
+# cytosine_conversion_calculator.pl
 
+Evaluates nuclear and chloroplast CHH methylation to estimate cytosine non-conversion and other errors in bisulfite treated sequencing reads (BS-Seq) in *Arabidopsis* TAIR10. Input is the methylation report produced by the **bismark_methylation_extractor** (CX_report) from the BS-seq mapping tool [bismark](https://www.bioinformatics.babraham.ac.uk/projects/bismark/).
+
+Usage:
+```
+perl cytosine_conversion_calculator.pl sample.deduplicated.CX_report.txt
+```
+
+Produce standard output like:
+```
+The mean chloroplast CHH methylation is :0.663193735143279% 
+The mean nuclear CHH methylation is :2.04898463286775% 
+```
+
+# CONTACT
+juan.santos at slu.se
