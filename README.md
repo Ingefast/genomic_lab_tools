@@ -12,7 +12,7 @@ Shell scripts (*.sh) of this software were developed and tested using GNU bash (
 # TOOLS
 
 ## fastq_header.pl
-In pair-end (PE) fastq files the sequence identifiers in line 1 (of 4) of each sequence are identical in both read1 and read2 files. Sometimes one wants to concatenate (```cat```) both paired-end files to a single-end (SE) fastq file for downstream analysis. This creates a fastq file were each sequence identifier is present twice, therefore not unique. This lack of uniqueness can cause bugs down the line at some processes like e.g. deduplication. 
+In pair-end (PE) fastq files  the sequence identifiers in line 1 (of 4) of each sequence are identical in both read1 and read2 files. Sometimes one wants to concatenate (```cat```) both paired-end files to a single-end (SE) fastq file for downstream analysis. This creates a fastq file were each sequence identifier is present twice, therefore not unique. This lack of uniqueness can cause bugs down the line at some processes like e.g. deduplication. 
 This script adds endings '/1' and '/2' to the identifier of each read in the pair to make them unique prior to concatenation.
 
 Usage:
